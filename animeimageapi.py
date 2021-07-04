@@ -23,7 +23,7 @@ def animeimageapi():
         img_path=os.path.join(os.path.dirname(__file__), "img")
     )
 	animeimageapi = Application([
-		(r"/main", MainPage),
+		(r"/", MainPage),
 		(r"/anime", animeimage)
 	], api)
 	return animeimageapi
