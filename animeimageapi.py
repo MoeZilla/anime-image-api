@@ -24,7 +24,7 @@ def animeimageapi():
     )
 	animeimageapi = Application([
 		(r"/main", MainPage),
-		(r"/anime", animepage)
+		(r"/anime", animeimage)
 	], api)
 	return animeimageapi
 
