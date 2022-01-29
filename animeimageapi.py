@@ -19,14 +19,13 @@ class animeimage(RequestHandler):
 
 
 def animeimageapi():
-	api = dict(
+    api = dict(
         img_path=os.path.join(os.path.dirname(__file__), "img")
     )
-	animeimageapi = Application([
-		(r"/", MainPage),
-		(r"/anime", animeimage)
-	], api)
-	return animeimageapi
+    return Application([
+    	(r"/", MainPage),
+    	(r"/anime", animeimage)
+    ], api)
 
 os.environ.get('PORT')
 
